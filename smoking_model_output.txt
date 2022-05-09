@@ -1,0 +1,14 @@
+StatsModels.TableRegressionModel{LinearModel{GLM.LmResp{Vector{Float64}}, GLM.DensePredChol{Float64, LinearAlgebra.CholeskyPivoted{Float64, Matrix{Float64}}}}, Matrix{Float64}}
+
+Gestational_Age ~ 1 + Smoke_Status
+
+Coefficients:
+───────────────────────────────────────────────────────────────────────────────────
+                          Coef.  Std. Error       t  Pr(>|t|)  Lower 95%  Upper 95%
+───────────────────────────────────────────────────────────────────────────────────
+(Intercept)            21.9884    0.0689833  318.75    <1e-99   21.8532    22.1236
+Smoke_Status: Smoked    2.91509   0.240951    12.10    <1e-32    2.44282    3.38737
+Smoke_Status: Unknown  -8.14467   0.157532   -51.70    <1e-99   -8.45344   -7.83589
+───────────────────────────────────────────────────────────────────────────────────
+Training Set MSE = 102.1631512588436
+Testing Set MSE = 79.77421982641539

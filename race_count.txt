@@ -1,0 +1,7 @@
+race,N
+White(alone),25227
+Black(alone),11925
+Asian(alone),2352
+More than one race,540
+NHOPI(alone),330
+AIAN(alone),314

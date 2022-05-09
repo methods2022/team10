@@ -1,0 +1,96 @@
+1×7 DataFrame
+ Row │ variable    mean     min      median   max      nmissing  eltype
+     │ Symbol      Float64  Float64  Float64  Float64  Int64     DataType
+─────┼────────────────────────────────────────────────────────────────────
+   1 │ OverallAge  19.9256      2.0     20.0     47.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable             mean     min      median   max      nmissing  eltype
+     │ Symbol               Float64  Float64  Float64  Float64  Int64     DataType
+─────┼─────────────────────────────────────────────────────────────────────────────
+   1 │ EigthGradeOrLessAge  25.0984      2.0     25.0     46.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable                      mean     min      median   max      nmissing  eltype
+     │ Symbol                        Float64  Float64  Float64  Float64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────────────────────────────
+   1 │ NinthTwelthGradeNoDiplomaAge  25.4832      3.0     25.0     46.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable               mean     min      median   max      nmissing  eltype
+     │ Symbol                 Float64  Float64  Float64  Float64  Int64     DataType
+─────┼───────────────────────────────────────────────────────────────────────────────
+   1 │ HighSchoolGraduateAge  21.7123      2.0     21.0     47.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable              mean     min      median   max      nmissing  eltype
+     │ Symbol                Float64  Float64  Float64  Float64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────────────────────
+   1 │ SomeCollegeCreditAge  24.9624      2.0     24.0     47.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable             mean     min      median   max      nmissing  eltype
+     │ Symbol               Float64  Float64  Float64  Float64  Int64     DataType
+─────┼─────────────────────────────────────────────────────────────────────────────
+   1 │ AssociatesDegreeAge  23.9663      2.0     23.0     47.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable            mean     min      median   max      nmissing  eltype
+     │ Symbol              Float64  Float64  Float64  Float64  Int64     DataType
+─────┼────────────────────────────────────────────────────────────────────────────
+   1 │ BachelorsDegreeAge  22.4203      2.0     22.0     47.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable          mean     min      median   max      nmissing  eltype
+     │ Symbol            Float64  Float64  Float64  Float64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────────────────
+   1 │ MastersDegreeAge  20.8009      2.0     20.0     47.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable                  mean     min      median   max      nmissing  eltype
+     │ Symbol                    Float64  Float64  Float64  Float64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────────────────────────
+   1 │ DoctorateProfessionalAge  21.0554      5.0     20.0     45.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable    mean     min      median   max      nmissing  eltype
+     │ Symbol      Float64  Float64  Float64  Float64  Int64     DataType
+─────┼────────────────────────────────────────────────────────────────────
+   1 │ UnknownAge  13.6687      2.0     10.0     47.0         0  Float64
+
+One-way analysis of variance (ANOVA) test
+-----------------------------------------
+Population details:
+    parameter of interest:   Means
+    value under h_0:         "all equal"
+    point estimate:          NaN
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    p-value:                     <1e-99
+
+Details:
+    number of observations: [976, 2477, 10701, 4439, 1930, 4497, 2064, 542, 13062]
+    F statistic:            1328.02
+    degrees of freedom:     (8, 40679)
+
+StatsModels.TableRegressionModel{LinearModel{GLM.LmResp{Vector{Float64}}, GLM.DensePredChol{Float64, LinearAlgebra.CholeskyPivoted{Float64, Matrix{Float64}}}}, Matrix{Float64}}
+
+age ~ 1 + mothers_education
+
+Coefficients:
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                            Coef.  Std. Error       t  Pr(>|t|)   Lower 95%   Upper 95%
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+(Intercept)                                             26.1273      0.356484   73.29    <1e-99   25.4286     26.8261
+mothers_education: 9th-12th grade with no diploma        0.329221    0.419642    0.78    0.4327   -0.493297    1.15174
+mothers_education: Associate's degree                   -1.83827     0.434837   -4.23    <1e-04   -2.69057    -0.985967
+mothers_education: Bachelor's degree                    -2.40418     0.395479   -6.08    <1e-08   -3.17934    -1.62902
+mothers_education: Doctorate or professional degree     -3.14567     0.61258    -5.14    <1e-06   -4.34636    -1.94499
+mothers_education: High school graduate                 -3.05283     0.37298    -8.18    <1e-15   -3.78389    -2.32178
+mothers_education: Master's degree                      -3.87986     0.43665    -8.89    <1e-18   -4.73572    -3.02401
+mothers_education: Some college credit, but no degree   -0.330942    0.393161   -0.84    0.3999   -1.10156     0.439672
+mothers_education: Unknown                             -11.8451      0.373057  -31.75    <1e-99  -12.5763    -11.1139
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Training Set MSE = 94.77219010033423
+Testing Set MSE = 102.60558528432193

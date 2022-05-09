@@ -1,0 +1,31 @@
+StatsModels.TableRegressionModel{LinearModel{GLM.LmResp{Vector{Float64}}, GLM.DensePredChol{Float64, LinearAlgebra.CholeskyPivoted{Float64, Matrix{Float64}}}}, Matrix{Float64}}
+
+Gestational_Age ~ 1 + Sex + Education + Birthplace + Race + Smoke_Status
+
+Coefficients:
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                    Coef.  Std. Error        t  Pr(>|t|)   Lower 95%    Upper 95%
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+(Intercept)                                     30.0271     0.433177     69.32    <1e-99   29.178      30.8761
+Sex: Male                                       -0.464524   0.0905101    -5.13    <1e-06   -0.641928   -0.28712
+Sex: Unknown                                   -17.9117     0.100755   -177.77    <1e-99  -18.1092    -17.7142
+Education: 9th-12th grade with no diploma       -0.452514   0.26527      -1.71    0.0880   -0.972456    0.0674281
+Education: Associate's degree                   -1.32075    0.273819     -4.82    <1e-05   -1.85745    -0.784054
+Education: Bachelor's degree                    -1.02488    0.249274     -4.11    <1e-04   -1.51347    -0.536291
+Education: Doctorate or professional degree     -0.888477   0.385887     -2.30    0.0213   -1.64483    -0.13212
+Education: High school graduate                 -0.995097   0.235858     -4.22    <1e-04   -1.45739    -0.532804
+Education: Master's degree                      -0.925351   0.275537     -3.36    0.0008   -1.46542    -0.385285
+Education: Some college credit, but no degree   -0.75214    0.248006     -3.03    0.0024   -1.23824    -0.266037
+Education: Unknown                              -1.63838    0.241783     -6.78    <1e-10   -2.11228    -1.16447
+Birthplace: Not in Hospital                     -2.14888    0.236123     -9.10    <1e-19   -2.61169    -1.68607
+Birthplace: Unknown                             -0.445208   1.08476      -0.41    0.6815   -2.57139     1.68098
+Race: Asian (alone)                             -1.57396    0.410348     -3.84    0.0001   -2.37826    -0.769655
+Race: Black (alone)                             -2.03524    0.377217     -5.40    <1e-07   -2.7746     -1.29587
+Race: More than one race                        -1.39212    0.471603     -2.95    0.0032   -2.31649    -0.467759
+Race: NHOPI (alone)                             -1.0331     0.518127     -1.99    0.0462   -2.04866    -0.017549
+Race: White (alone)                             -1.51372    0.374459     -4.04    <1e-04   -2.24768    -0.779765
+Smoke_Status: Smoked                             0.596491   0.148981      4.00    <1e-04    0.30448     0.888501
+Smoke_Status: Unknown                           -0.274014   0.106263     -2.58    0.0099   -0.482295   -0.0657328
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Training Set MSE = 37.47593397270815
+Testing Set MSE = 27.60069365219444

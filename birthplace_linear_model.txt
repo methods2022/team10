@@ -1,0 +1,119 @@
+1×7 DataFrame
+ Row │ variable    mean     min      median   max      nmissing  eltype
+     │ Symbol      Float64  Float64  Float64  Float64  Int64     DataType
+─────┼────────────────────────────────────────────────────────────────────
+   1 │ OverallAge  19.9256      2.0     20.0     47.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable     mean     min      median   max      nmissing  eltype
+     │ Symbol       Float64  Float64  Float64  Float64  Int64     DataType
+─────┼─────────────────────────────────────────────────────────────────────
+   1 │ HosptialAge  19.9255      2.0     20.0     47.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable        mean     min      median   max      nmissing  eltype
+     │ Symbol          Float64  Float64  Float64  Float64  Int64     DataType
+─────┼────────────────────────────────────────────────────────────────────────
+   1 │ BirthCenterAge  29.7333     20.0     31.0     40.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable         mean     min      median   max      nmissing  eltype
+     │ Symbol           Float64  Float64  Float64  Float64  Int64     DataType
+─────┼─────────────────────────────────────────────────────────────────────────
+   1 │ HomeIntendedAge  26.1081      3.0     23.0     43.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable           mean     min      median   max      nmissing  eltype
+     │ Symbol             Float64  Float64  Float64  Float64  Int64     DataType
+─────┼───────────────────────────────────────────────────────────────────────────
+   1 │ HomeUnintendedAge  19.2606      2.0     20.0     45.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable        mean     min      median   max      nmissing  eltype
+     │ Symbol          Float64  Float64  Float64  Float64  Int64     DataType
+─────┼────────────────────────────────────────────────────────────────────────
+   1 │ HomeUnknownAge  22.5285      5.0     21.0     41.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable         mean     min      median   max      nmissing  eltype
+     │ Symbol           Float64  Float64  Float64  Float64  Int64     DataType
+─────┼─────────────────────────────────────────────────────────────────────────
+   1 │ ClinicOfficeAge  13.7529      3.0     11.0     40.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable          mean     min      median   max      nmissing  eltype
+     │ Symbol            Float64  Float64  Float64  Float64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────────────────
+   1 │ OtherLocationAge  25.1194      4.0     25.0     41.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable            mean     min      median   max      nmissing  eltype
+     │ Symbol              Float64  Float64  Float64  Float64  Int64     DataType
+─────┼────────────────────────────────────────────────────────────────────────────
+   1 │ UnknownLocationAge  24.8367      5.0     25.0     44.0         0  Float64
+
+One-way analysis of variance (ANOVA) test
+-----------------------------------------
+Population details:
+    parameter of interest:   Means
+    value under h_0:         "all equal"
+    point estimate:          NaN
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    p-value:                     <1e-99
+
+Details:
+    number of observations: [39612, 15, 74, 426, 123, 255, 134, 49]
+    F statistic:            399.369
+    degrees of freedom:     (7, 40680)
+
+One-way analysis of variance (ANOVA) test
+-----------------------------------------
+Population details:
+    parameter of interest:   Means
+    value under h_0:         "all equal"
+    point estimate:          NaN
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    p-value:                     <1e-99
+
+Details:
+    number of observations: [39612, 1027, 49]
+    F statistic:            431.507
+    degrees of freedom:     (2, 40685)
+
+StatsModels.TableRegressionModel{LinearModel{GLM.LmResp{Vector{Float64}}, GLM.DensePredChol{Float64, LinearAlgebra.CholeskyPivoted{Float64, Matrix{Float64}}}}, Matrix{Float64}}
+
+age ~ 1 + birthplace
+
+Coefficients:
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                           Coef.  Std. Error       t  Pr(>|t|)  Lower 95%  Upper 95%
+────────────────────────────────────────────────────────────────────────────────────────────────────
+(Intercept)                            21.4087     0.0643177  332.86    <1e-99   21.2826    21.5348
+birthplace: Clinic/Doctor's Office     -9.46277    1.24735     -7.59    <1e-13  -11.9076    -7.01791
+birthplace: Freestanding Birth Center  10.8913     3.38925      3.21    0.0013    4.24821   17.5344
+birthplace: Home (intended)             3.81004    1.34102      2.84    0.0045    1.18158    6.4385
+birthplace: Home (unintended)          -2.39861    0.542317    -4.42    <1e-05   -3.46158   -1.33564
+birthplace: Home (unknown intention)    4.28772    1.4334       2.99    0.0028    1.47818    7.09726
+birthplace: Other                       4.60216    1.11905      4.11    <1e-04    2.40877    6.79555
+birthplace: Unknown                     0.872539   1.8954       0.46    0.6453   -2.84253    4.58761
+────────────────────────────────────────────────────────────────────────────────────────────────────
+Training Set MSE = 114.7962310134665
+Testing Set MSE = 125.28447453411339
+StatsModels.TableRegressionModel{LinearModel{GLM.LmResp{Vector{Float64}}, GLM.DensePredChol{Float64, LinearAlgebra.CholeskyPivoted{Float64, Matrix{Float64}}}}, Matrix{Float64}}
+
+age ~ 1 + general_birthplace
+
+Coefficients:
+──────────────────────────────────────────────────────────────────────────────────────────────────
+                                         Coef.  Std. Error       t  Pr(>|t|)  Lower 95%  Upper 95%
+──────────────────────────────────────────────────────────────────────────────────────────────────
+(Intercept)                          21.4087     0.0644439  332.21    <1e-99   21.2824   21.535
+general_birthplace: Not in Hospital  -0.915936   0.413209    -2.22    0.0267   -1.72585  -0.106027
+general_birthplace: Unknown           0.872539   1.89911      0.46    0.6459   -2.84982   4.59489
+──────────────────────────────────────────────────────────────────────────────────────────────────
+Training Set MSE = 115.26731290999551
+Testing Set MSE = 125.5669219172372

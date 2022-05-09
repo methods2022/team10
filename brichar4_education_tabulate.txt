@@ -1,0 +1,10 @@
+***COUNTS OF MOTHER'S EDUCATION STATUS***
+13062|Unknown
+10701|High school graduate
+4497|Bachelor's degree
+4439|Some college credit, but no degree
+2477|9th-12th grade with no diploma
+2064|Master's degree
+1930|Associate's degree
+976|8th grade or less
+542|Doctorate or professional degree

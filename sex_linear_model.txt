@@ -1,0 +1,54 @@
+1×7 DataFrame
+ Row │ variable  mean     min      median   max      nmissing  eltype
+     │ Symbol    Float64  Float64  Float64  Float64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────────
+   1 │ Age       19.2044      2.0     20.0     47.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable  mean     min      median   max      nmissing  eltype
+     │ Symbol    Float64  Float64  Float64  Float64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────────
+   1 │ MaleAge   26.7682      5.0     25.0     47.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable   mean     min      median   max      nmissing  eltype
+     │ Symbol     Float64  Float64  Float64  Float64  Int64     DataType
+─────┼───────────────────────────────────────────────────────────────────
+   1 │ FemaleAge  27.2705      2.0     26.0     47.0         0  Float64
+
+1×7 DataFrame
+ Row │ variable  mean     min      median   max      nmissing  eltype
+     │ Symbol    Float64  Float64  Float64  Float64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────────
+   1 │ Unknown   8.90027      2.0      8.0     19.0         0  Float64
+
+One-way analysis of variance (ANOVA) test
+-----------------------------------------
+Population details:
+    parameter of interest:   Means
+    value under h_0:         "all equal"
+    point estimate:          NaN
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    p-value:                     <1e-99
+
+Details:
+    number of observations: [12378, 10783, 17527]
+    F statistic:            48664.1
+    degrees of freedom:     (2, 40685)
+
+StatsModels.TableRegressionModel{LinearModel{GLM.LmResp{Vector{Float64}}, GLM.DensePredChol{Float64, LinearAlgebra.CholeskyPivoted{Float64, Matrix{Float64}}}}, Matrix{Float64}}
+
+Gestational_Week ~ 1 + Gender_of_Fetus
+
+Coefficients:
+───────────────────────────────────────────────────────────────────────────────────────────
+                               Coef.  Std. Error        t  Pr(>|t|)   Lower 95%   Upper 95%
+───────────────────────────────────────────────────────────────────────────────────────────
+(Intercept)                27.3935     0.0664257   412.39    <1e-99   27.2633     27.5237
+Gender_of_Fetus: Male      -0.484719   0.0909149    -5.33    <1e-07   -0.662916   -0.306521
+Gender_of_Fetus: Unknown  -18.3869     0.0904188  -203.35    <1e-99  -18.5641    -18.2097
+───────────────────────────────────────────────────────────────────────────────────────────
+Training Set MSE = 37.87625721168185
+Testing Set MSE = 28.06910891683233

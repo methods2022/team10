@@ -1,0 +1,77 @@
+1×7 DataFrame
+ Row │ variable         mean     min    median   max    nmissing  eltype
+     │ Symbol           Float64  Int64  Float64  Int64  Int64     DataType
+─────┼─────────────────────────────────────────────────────────────────────
+   1 │ gestational_age  19.2044      2     20.0     47         0  Int64
+
+1×7 DataFrame
+ Row │ variable  mean     min    median   max    nmissing  eltype
+     │ Symbol    Float64  Int64  Float64  Int64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────
+   1 │ White     19.4624      2     20.0     46         0  Int64
+
+1×7 DataFrame
+ Row │ variable  mean     min    median   max    nmissing  eltype
+     │ Symbol    Float64  Int64  Float64  Int64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────
+   1 │ Black     18.6768      2     19.0     47         0  Int64
+
+1×7 DataFrame
+ Row │ variable  mean     min    median   max    nmissing  eltype
+     │ Symbol    Float64  Int64  Float64  Int64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────
+   1 │ AIAN      26.8885      2     26.0     41         0  Int64
+
+1×7 DataFrame
+ Row │ variable  mean     min    median   max    nmissing  eltype
+     │ Symbol    Float64  Int64  Float64  Int64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────
+   1 │ Asian     16.8827      2     13.0     41         0  Int64
+
+1×7 DataFrame
+ Row │ variable  mean     min    median   max    nmissing  eltype
+     │ Symbol    Float64  Int64  Float64  Int64  Int64     DataType
+─────┼──────────────────────────────────────────────────────────────
+   1 │ NHOPI     19.2667      4     19.0     42         0  Int64
+
+1×7 DataFrame
+ Row │ variable            mean     min    median   max    nmissing  eltype
+     │ Symbol              Float64  Int64  Float64  Int64  Int64     DataType
+─────┼────────────────────────────────────────────────────────────────────────
+   1 │ More_than_one_race   24.413      2     23.0     41         0  Int64
+
+One-way analysis of variance (ANOVA) test
+-----------------------------------------
+Population details:
+    parameter of interest:   Means
+    value under h_0:         "all equal"
+    point estimate:          NaN
+
+Test summary:
+    outcome with 95% confidence: reject h_0
+    p-value:                     <1e-99
+
+Details:
+    number of observations: [25227, 11925, 314, 2352, 330, 540]
+    F statistic:            302.014
+    degrees of freedom:     (5, 40682)
+
+
+StatsModels.TableRegressionModel{LinearModel{GLM.LmResp{Vector{Float64}}, GLM.DensePredChol{Float64, LinearAlgebra.CholeskyPivoted{Float64, Matrix{Float64}}}}, Matrix{Float64}}
+
+gestational_age ~ 1 + race
+
+Coefficients:
+──────────────────────────────────────────────────────────────────────────────────────
+                             Coef.  Std. Error       t  Pr(>|t|)  Lower 95%  Upper 95%
+──────────────────────────────────────────────────────────────────────────────────────
+(Intercept)               27.4964     0.639654   42.99    <1e-99   26.2426   28.7501
+race: Asian(alone)        -7.0285     0.70427    -9.98    <1e-22   -8.4089   -5.64809
+race: Black(alone)        -7.2649     0.649847  -11.18    <1e-28   -8.53864  -5.99117
+race: More than one race  -1.95563    0.814124   -2.40    0.0163   -3.55135  -0.359905
+race: NHOPI(alone)        -8.87221    0.892043   -9.95    <1e-22  -10.6207   -7.12377
+race: White(alone)        -6.70053    0.644598  -10.39    <1e-24   -7.96397  -5.43709
+──────────────────────────────────────────────────────────────────────────────────────
+
+Training Set MSE = 112.08544934026934
+Test Set MSE = 127.23418201070176
