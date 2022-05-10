@@ -4,3 +4,5 @@ Fetal death is a major concern among pregnant women, as well as their physicians
 Using this code or interpreting results requires some background in statistics, namely One-Way Analysis of Variance (ANOVA) and linear regression. Some knowledge of running a julia program through Terminal is also required.
 
 # Core Technical Concepts
+
+Using [fetal death data from 2020](https://www.cdc.gov/nchs/data_access/vitalstatsonline.htm) provided by the Centers for Disease Control and Prevention
