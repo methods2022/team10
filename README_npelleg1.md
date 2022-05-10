@@ -11,3 +11,11 @@ This project uses the Julia programming language to perform linear regression, m
 # Getting Started/Prerequisite Packages
 
 This project requires the installation of the [Julia programming language](https://julialang.org/). Additionally, it requires the following packages used for statistical analysis and visualizations: [CSV](https://csv.juliadata.org/stable/), [DataFrames](https://dataframes.juliadata.org/stable/), [Plots](https://docs.juliaplots.org/stable/), [PlotlyJS](http://juliaplots.org/PlotlyJS.jl/stable/), [HypothesisTests](http://juliastats.org/HypothesisTests.jl/stable/), [MLJ](https://alan-turing-institute.github.io/MLJ.jl/dev/), and [GLM](https://juliastats.org/GLM.jl/v0.11/). 
+
+# Running Analysis Files
+
+The analysis of fetal death and birth/death location is separated into three parts: [creating the dataset from the CDC text file](https://github.com/methods2022/team10/blob/master/npelleg1_birthplace_process.jl), [visual analysis](https://github.com/methods2022/team10/blob/master/npelleg1_birthplace_visual.jl), and [running the ANOVA tests and creating the linear model](https://github.com/methods2022/team10/blob/master/npelleg1_birthplace_analysis.jl).
+
+The npelleg_birthplace_process.jl file creates the dataset used in the proceeding analysis files. It reads in the 2020 fetal death CDC text file (located in the /gpfs/data/biol1555/0_shared/0_data/vital folder under Fetal2020US_COD.txt) and extracts the age, death setting, and general death setting variables. The death setting and generalized death settings are located in columns 34 and 52, respecively, of the CDC text file. Age is under columns 331 and 332. These data are extracted and placed into a new text file called "birthplace_cleaned.txt", which is created when running the npelleg_birthplace_process.jl file through Julia.
+
+The npelleg1_birthplace_visual.jl file creates two boxplots: one comparing age at death across all locations and a second looking at age across the generalized groups. When running this file through Julia, a "birthplace.html" and "generalBirthplace.html" file will be produced. These can be open in your browser of choice to view the boxplots.
