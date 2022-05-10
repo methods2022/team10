@@ -22,6 +22,18 @@ The npelleg1_birthplace_visual.jl file creates two boxplots: one comparing age a
 
 The npelleg1_birthplace_analysis.jl file performs all of the statistical analysis. It computes summary statistics for each unique death setting, as well as running an ANOVA test between the birthplaces to test for significant differences between groups and their mean gestational age at death. The file also performs the 70/30 data split into training and testing sets, which are then used to create the univariate linear models between age and location. The training and testing MSE are then calculated for each set for each model. All of the results are stored in the "birthplace_linear_model.txt" file that is created when running the npelleg1_birthplace_analysis.jl script.
 
-# Contributing
+# Contributions
 
 Massive thanks to the following contributors in their analysis of different risk factors on fetal death: [Nicholas Pellegrino (me)](https://github.com/nicholaspellegrino1), [Yijing Gao](https://github.com/Yijinggao), [Timothy Hedspeth](https://github.com/timhedspeth), [Ifelola Olabode](https://github.com/iolabode), and [Breanna Richards](https://github.com/brichards21).
+
+Unfortunately, this repo is not open to contributions from outside members of this group. Thank you for your understanding.
+
+# Future Analysis
+
+It would be ideal to use the model created here on different populations to test the external validity of it. Future multivariate models should also take into account other potential risk factors of miscarrying, such as stress, occupation, environmental factors like pollution, etc. Larger samples would also be ideal in order to get more fetuses in each category of death setting to improve internal validity of the model.
+
+# Contact Me
+
+If you have any questions about the project, feel free to reach out to Nicholas Pellegrino through the following means:
+Email: nicholas_pellegrino@brown.edu
+Slack: [Methods 2022 class Slack](https://app.slack.com/client/T030BQB48U8/C02UMDTB0B1)
