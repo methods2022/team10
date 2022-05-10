@@ -16,11 +16,11 @@ This project requires the installation of the [Julia programming language](https
 
 The analysis of fetal death and birth/death location is separated into three parts: [creating the dataset from the CDC text file](https://github.com/methods2022/team10/blob/master/npelleg1_birthplace_process.jl), [visual analysis](https://github.com/methods2022/team10/blob/master/npelleg1_birthplace_visual.jl), and [running the ANOVA tests and creating the linear model](https://github.com/methods2022/team10/blob/master/npelleg1_birthplace_analysis.jl).
 
-The npelleg_birthplace_process.jl file creates the dataset used in the proceeding analysis files. It reads in the 2020 fetal death CDC text file (located in the /gpfs/data/biol1555/0_shared/0_data/vital folder under Fetal2020US_COD.txt) and extracts the age, death setting, and general death setting variables. The death setting and generalized death settings are located in columns 34 and 52, respecively, of the CDC text file. Age is under columns 331 and 332. These data are extracted and placed into a new text file called "birthplace_cleaned.txt", which is created when running the npelleg_birthplace_process.jl file through Julia.
+The [npelleg_birthplace_process.jl file](https://github.com/methods2022/team10/blob/master/npelleg1_birthplace_process.jl) creates the dataset used in the proceeding analysis files. It reads in the 2020 fetal death CDC text file (located in the /gpfs/data/biol1555/0_shared/0_data/vital folder under Fetal2020US_COD.txt) and extracts the age, death setting, and general death setting variables. The death setting and generalized death settings are located in columns 34 and 52, respecively, of the CDC text file. Age is under columns 331 and 332. These data are extracted and placed into a new text file called "birthplace_cleaned.txt", which is created when running the npelleg_birthplace_process.jl file through Julia.
 
-The npelleg1_birthplace_visual.jl file creates two boxplots: one comparing age at death across all locations and a second looking at age across the generalized groups. When running this file through Julia, a "birthplace.html" and "generalBirthplace.html" file will be produced. These can be open in your browser of choice to view the boxplots.
+The [npelleg1_birthplace_visual.jl file](https://github.com/methods2022/team10/blob/master/npelleg1_birthplace_visual.jl) creates two boxplots from the "birthplace_cleaned.txt" file: one comparing age at death across all locations and a second looking at age across the generalized groups. When running this file through Julia, a "birthplace.html" and "generalBirthplace.html" file will be produced. These can be open in your browser of choice to view the boxplots.
 
-The npelleg1_birthplace_analysis.jl file performs all of the statistical analysis. It computes summary statistics for each unique death setting, as well as running an ANOVA test between the birthplaces to test for significant differences between groups and their mean gestational age at death. The file also performs the 70/30 data split into training and testing sets, which are then used to create the univariate linear models between age and location. The training and testing MSE are then calculated for each set for each model. All of the results are stored in the "birthplace_linear_model.txt" file that is created when running the npelleg1_birthplace_analysis.jl script.
+The [npelleg1_birthplace_analysis.jl](https://github.com/methods2022/team10/blob/master/npelleg1_birthplace_analysis.jl) file performs all of the statistical analysis using the "birthplace_cleaned.txt" file created from npelleg1_birthplace_process.jl. It computes summary statistics for each unique death setting, as well as running an ANOVA test between the birthplaces to test for significant differences between groups and their mean gestational age at death. The file also performs the 70/30 data split into training and testing sets, which are then used to create the univariate linear models between age and location. The training and testing MSE are then calculated for each set for each model. All of the results are stored in the "birthplace_linear_model.txt" file that is created when running the npelleg1_birthplace_analysis.jl script.
 
 # Contributions
 
@@ -35,5 +35,7 @@ It would be ideal to use the model created here on different populations to test
 # Contact Me
 
 If you have any questions about the project, feel free to reach out to Nicholas Pellegrino through the following means:
+
 Email: nicholas_pellegrino@brown.edu
-Slack: [Methods 2022 class Slack](https://app.slack.com/client/T030BQB48U8/C02UMDTB0B1)
+
+Slack: [Methods 2022 Class Slack](https://app.slack.com/client/T030BQB48U8/C02UMDTB0B1)
