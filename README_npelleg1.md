@@ -34,7 +34,7 @@ It would be ideal to use the model created here on different populations to test
 
 # Contact Me
 
-If you have any questions about the project, feel free to reach out to Nicholas Pellegrino through the following means:
+If you have any questions about the project, feel free to reach out to Nicholas Pellegrino through the following methods:
 
 Email: nicholas_pellegrino@brown.edu
 
