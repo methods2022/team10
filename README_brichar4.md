@@ -43,9 +43,13 @@ The [brichar4_analysis.jl](https://github.com/methods2022/team10/blob/master/bri
 ## Contributing
 
 HUGE thank you to my team members for their wonderful contributions to this project!: 
+
 [Nicholas Pellegrino](https://github.com/nicholaspellegrino1)
+
 [Ifelola Olabode](https://github.com/iolabode)
+
 [Yijing Gao](https://github.com/Yijinggao)
+
 [Timothy Hedspeth](https://github.com/timhedspeth)
 
 
