@@ -22,7 +22,7 @@ Mean Squared Error (MSE): measures the amount of error in statistical models - a
 
 ## Getting Started
 
-This project requires the installation of the Julia programming language. The following packages were downloaded in Julia and used for statistical analysis and visualizations: CSV, DataFrames, Plots, PlotlyJS, HypothesisTests, MLJ, and GLM.
+This project requires the installation of the Julia programming language. The following packages were downloaded in Julia and used for statistical analysis and visualizations: [CSV](https://csv.juliadata.org/stable/),[DataFrames](https://dataframes.juliadata.org/stable/), [Plots](https://docs.juliaplots.org/stable/), [PlotlyJS](http://juliaplots.org/PlotlyJS.jl/stable/), [HypothesisTests](http://juliastats.org/HypothesisTests.jl/stable/), [MLJ](https://alan-turing-institute.github.io/MLJ.jl/dev/), and [GLM](https://juliastats.org/GLM.jl/v0.11/).
 
 
 ## Statistical Analysis: Mother's Educational Background
