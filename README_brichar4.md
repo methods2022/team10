@@ -18,3 +18,38 @@ Training Set: A subset to train a model on.
 Testing Set: A subset (usually smaller than the training set) to test the trained model.
 
 Mean Squared Error (MSE): measures the amount of error in statistical models - assesses the average squared difference between the observed and predicted values. Smaller values means less error.
+
+
+## Getting Started
+
+This project requires the installation of the Julia programming language. The following packages were downloaded in Julia and used for statistical analysis and visualizations: CSV, DataFrames, Plots, PlotlyJS, HypothesisTests, MLJ, and GLM.
+
+
+## Statistical Analysis: Mother's Educational Background
+
+The analysis of fetal death/gestational age and mother's educational background is encapsulated by three different steps.
+
+1) Subset the CDC text file data 
+2) Create visualizations
+3) Run summary statistics, ANOVA, and simple linear regression between mother's education and gestational age at time of fetal death
+
+The [brichar4_education.jl](https://github.com/methods2022/team10/blob/master/brichar4_education.jl) file subsets the larger dataset from the CDC (located in the /gpfs/data/biol1555/0_shared/0_data/vital folder under Fetal2020US_COD.txt) and extracts the gestational age (columns 331-332) and mother's education variables (column 145). This new dataset is then output to a file called "brichar4_age_education.txt".
+
+The [brichar4_plot_code.jl](https://github.com/methods2022/team10/blob/master/brichar4_plot_code.jl) file contains the code used to create a plot of side-by-side boxplots of the unique mother's education statuses and their distributions of gestational age at time of fetal death. This code can be run in the terminal with the Julia program.
+
+The [brichar4_analysis.jl](https://github.com/methods2022/team10/blob/master/brichar4_analysis.jl) file calculates summary statistics, and performs ANOVA and simple linear regression on the data that was generated from the [brichar4_education.jl](https://github.com/methods2022/team10/blob/master/brichar4_education.jl) file ("brichar4_age_education.txt"). In regards to running linear regression, this code also computes the MSE on the training and testing sets generated from the 70-30 split of the full dataset. The results of these analyses are stored in a text file called "education_linear_model.txt".
+
+
+## Contributing
+
+HUGE thank you to my team members for their wonderful contributions to this project!: 
+[Nicholas Pellegrino](https://github.com/nicholaspellegrino1)
+[Ifelola Olabode](https://github.com/iolabode)
+[Yijing Gao](https://github.com/Yijinggao)
+[Timothy Hedspeth](https://github.com/timhedspeth)
+
+
+## Next Steps
+
+The prospect of extending this study may be interested in exploring more complex relationships between the variables that we examined and even exploring the utility of additional sociodemographic features. We could also consider the use of models like support vector machine classifiers and other models that tend to be robust to outliers. 
+
