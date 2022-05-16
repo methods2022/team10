@@ -8,6 +8,8 @@ input_file = open("/gpfs/data/biol1555/projects2022/team10/brichar4_age_educatio
 
     plotlyjs()
 
+# display boxplot
+
     display(PlotlyJS.plot(df, x=:mothers_education, y=:age, kind="box", mode="markers",
 Layout(title = "Gestational Age at Death Between Mother’s Education Status",
 
@@ -15,7 +17,6 @@ Layout(title = "Gestational Age at Death Between Mother’s Education Status",
 
     ))
 
-output_file = 
 
 end
 
