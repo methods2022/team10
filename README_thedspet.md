@@ -2,7 +2,7 @@
 
 ### Risk Factors for Fetal Deaths by Gestational Age in 2020
 
-In this project we aimed to explore fetal deaths in the year 2020, and sociodemographic factors that we believed could be important risk factors. With this in mind our group explored the risk factors gender of fetus, birth location, mother's education level, race and smoking status of the mother to determine if these categorical variables had any impact on the age (in weeks) of fetal death. By conducting this project we sought to provide evidence (in the form of statistically significant results) that these risk factors are important factors in the time of fetal death. In order to have an understanding of the results from this project it is best to have at least some statistical background though we feel as though that is not incredibly nessescary. Though if a user wants to recreate this project some programing knoweldge is required. We have completed all the work that we sought out to for this project, but future extensions are possible. 
+In this project we aimed to explore fetal deaths in the year 2020, and sociodemographic factors that we believed could be important risk factors. With this in mind our group explored the risk factors gender of fetus, birth location, mother's education level, race and smoking status of the mother to determine if these categorical variables had any impact on the age (in weeks) of fetal death. By conducting this project we sought to provide evidence (in the form of statistically significant results) that these risk factors are important factors in the time of fetal death. In order to have an understanding of the results from this project it is best to have at least some statistical background though we feel as though that is not incredibly nessescary. Though if a user wants to recreate this project some programing knoweldge is required. We have completed all the work that we sought out to for this project, but future extensions are possible and discussed below.
 
 ### Core technical concepts 
 For this project we assume a basic knowedlge of statistical concepts, as this is the foundation that is utilized for our analysis, but we will walk through the concepts used in regard to the project, so that a user that may not have the approriate knowedgle could follow. 
@@ -30,14 +30,14 @@ The running of the programs for this project require more than the basic [julia]
 
 The first step once the data is downloaded is to extract the data of interest for the given risk factor(s) which is done with the program [thedspet_smoking.jl](thedspet_smoking.jl) for the data pertaining just to smoking and [data_for_multiple_regression.jl](data_for_multiple_regression.jl) to get the data for multiple linear regression. This is done by looping through the data sets line by line and parsing out the information we are interested in (categorical variables are mapped to a corresponding dictionary) that is read into a file for use in future analyses. 
 
-After the data was extracted we analyzed the data, starting with a visualization, for which a boxplot was constructed using [thesdpet_visual.jl](thesdpet_visual.jl)
+After the data was extracted we analyzed the data, starting with a visualization, for which a boxplot was constructed using [thesdpet_visual.jl](thesdpet_visual.jl), though please note that this code should be pasted into an active julia session to work, and running this file through the terminal was not sucessful. By using the data that was extracted we were able to use plotlyjs to create an interactive boxplot that shows the median value and the IQR for the smoking risk factor to give us an idea pertaining to the differences in age of gestational between mothers based on if they smoked or not. 
 
 
-[thedspet_smoking_anova.jl](thedspet_smoking_anova.jl)
+After noticing that the median age of gestational death appeared to be different among groups we ran an ANOVA test using this program [thedspet_smoking_anova.jl](thedspet_smoking_anova.jl). In this file we computed summary statistics and ran a one-way ANOVA to check if the means were significantly diffrenet between the groups. 
 
 
 
-[thedspet_smoking_regression.jl](thedspet_smoking_regression.jl) and [multipleregression.jl](multipleregression.jl)
+Lastly linear regression was preformed, the file [thedspet_smoking_regression.jl](thedspet_smoking_regression.jl) contains the script for a univariate linearr regression model adjusting only for the smoking status of the mother while [multipleregression.jl](multipleregression.jl) adjusts for all of the risk factors that were explored in this study. These files were used to determine the importance that these risk factors had on age of fetal death. 
 
 
 
@@ -56,13 +56,14 @@ Breanna Richards
 Tim Hedspeth (me) 
 
 
+
 ### To Do 
-Though we have accomplished the specific aims of our project, the CDC provides vast amounts of information pertaining to fetal death, so there are many variables that we could use in an extended analysis of this data. In addition the CDC also provides this data across many different years, so 
+Though we have accomplished the specific aims of our project, the CDC provides vast amounts of information pertaining to fetal death, so there are many variables that we could use in an extended analysis of this data. In addition the CDC also provides this data across many different years, so it is possible that a longituditnal analysis looking at clustering by state for example could yiled some trends regarding fetal death over time that could be important to adress. 
 
 
 ### Contact 
 
-If you have any questions please reach me at my email: timothy_hedspeth@brown.edu
+Thank you for taking the time to read, if you have any questions please reach me at my email: timothy_hedspeth@brown.edu
 
 
 ### Intial retrivial of the data 
