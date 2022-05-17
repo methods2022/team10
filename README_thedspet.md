@@ -43,17 +43,17 @@ Lastly linear regression was preformed, the file [thedspet_smoking_regression.jl
 
 
 ### Contributions 
-I would like to thank the members of my team that all worked so hard to make this project what it is: 
+I would like to thank the members of my team that all worked so hard to make this a fun sucessful project: 
 
-Nicholas Pellegrino
+[Nicholas Pellegrino](https://github.com/nicholaspellegrino1) 
 
-Yijing Gao 
+[Yijing Gao](https://github.com/Yijinggao)
 
-Ifelola Olabode
+[Ifelola Olabode](https://github.com/iolabode)
 
-Breanna Richards
+[Breanna Richards](https://github.com/brichards21)
 
-Tim Hedspeth (me) 
+You can also fine [me on github](https://github.com/timhedspeth)
 
 
 
