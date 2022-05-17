@@ -14,6 +14,17 @@ With the data downloaded you your system you should open a script file in Julia 
 
 ##### Multiple factors
 
-When we extend the 
+When we extend to a multivariate linear regression model we follow a similar process as detailed above in the section, single factor smoking. The only difference between these files that we have multiple factors for which we extract the values from the data set. 
+
+
+### Creating boxplots 
+
+
+
+###  Analysis of Variance 
+
+
+
+### Regression 
 
 
