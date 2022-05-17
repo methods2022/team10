@@ -1,8 +1,9 @@
 
-# This is a script to make the boxplots, this is a place holding code, as this works when we use the julia terminal 
+# This is a script to make a boxplot for the smoking risk factor 
+# This script must be copied into the Julia in terminal for it to work 
 
 # Load in the packages 
-using DataFrames using CSV using Plots using PlotlyJS
+using DataFrames, CSV, Plots, PlotlyJS
 
 # Define the file we are using 
 input_file = open("/gpfs/data/biol1555/projects2022/smoking.txt", "r")
