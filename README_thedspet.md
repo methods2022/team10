@@ -5,22 +5,34 @@
 In this project we aimed to explore fetal deaths in the year 2020, and sociodemographic factors that we believed could be important risk factors. With this in mind our group explored the risk factors gender of fetus, birth location, mother's education level, race and smoking status of the mother to determine if these categorical variables had any impact on the age (in weeks) of fetal death. By conducting this project we sought to provide evidence (in the form of statistically significant results) that these risk factors are important factors in the time of fetal death. In order to have an understanding of the results from this project it is best to have at least some statistical background though we feel as though that is not incredibly nessescary. Though if a user wants to recreate this project some programing knoweldge is required. We have completed all the work that we sought out to for this project, but future extensions are possible. 
 
 ### Core technical concepts 
-For this project we attempted to bring statistical evidence to risk factor's impact on 
+For this project we assume a basic knowedlge of statistical concepts, as this is the foundation that is utilized for our analysis, but we will walk through the concepts used in regard to the project, so that a user that may not have the approriate knowedgle could follow. 
+
+Factor/catgeorical variables: In this project we examined the differences in age of gestational death based on variables that have different levels (i.e. mother smoked, or didn't)
+
+Continuous variable: Age at gestational death in theory could take on any value 
 
 
 ### Prerequisites and dependcies 
 For this project you need to have the data that pertains to the 
 
 
-### Specfific Topics 
+### Related Repositories 
 
+To get the data set for the smoking risk factor, use [thedspet_smoking.jl](thedspet_smoking.jl) and to get the data set for multiple linear regression use 
+[data_for_multiple_regression.jl](data_for_multiple_regression.jl). In both of these files we create dictionaries that pertain to the factor of interest and parse through the data set 
 
 ### Contributions 
 I would like to thank the members of my team that all worked so hard to make this project what it is: 
 
-Nicholas Pellogrino
+Nicholas Pellegrino
 
+Yijing Gao 
 
+Ifelola Olabode
+
+Breanna Richards
+
+Tim Hedspeth (me) 
 
 
 ### To Do 
