@@ -1,6 +1,34 @@
-This is the Read me file for the smoking risk factor and multiple linear regression, written by Tim Hedspeth 
+## Tim Hedspeth's README 
 
-For this project, we explored risk factors pertaining to fetal death, each member was responsible for conducting an investigation into 1 risk factor. 
+### Risk Factors for Fetal Deaths by Gestational Age in 2020
+
+In this project we aimed to explore fetal deaths in the year 2020, and sociodemographic factors that we believed could be important risk factors. With this in mind our group explored the risk factors gender of fetus, birth location, mother's education level, race and smoking status of the mother to determine if these categorical variables had any impact on the age (in weeks) of fetal death. By conducting this project we sought to provide evidence (in the form of statistically significant results) that these risk factors are important factors in the time of fetal death. In order to have an understanding of the results from this project it is best to have at least some statistical background though we feel as though that is not incredibly nessescary. Though if a user wants to recreate this project some programing knoweldge is required. We have completed all the work that we sought out to for this project, but future extensions are possible. 
+
+### Core technical concepts 
+For this project we attempted to bring statistical evidence to risk factor's impact on 
+
+
+### Prerequisites and dependcies 
+For this project you need to have the data that pertains to the 
+
+
+### Specfific Topics 
+
+
+### Contributions 
+I would like to thank the members of my team that all worked so hard to make this project what it is: 
+
+Nicholas Pellogrino
+
+
+
+
+### To Do 
+Though we have accomplished the specific aims of our project, the CDC provides vast amounts of information pertaining to fetal death, so there are many variables that we could use in an extended analysis of this data. In addition the CDC also provides this data across many different years, so 
+
+
+
+
 
 ### Intial retrivial of the data 
 
