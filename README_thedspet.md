@@ -28,10 +28,19 @@ The running of the programs for this project require more than the basic [julia]
 
 ### Repositories and what they do 
 
-The first step once the data is downloaded is to extract the data of interest 
+The first step once the data is downloaded is to extract the data of interest for the given risk factor(s) which is done with the program [thedspet_smoking.jl](thedspet_smoking.jl) for the data pertaining just to smoking and [data_for_multiple_regression.jl](data_for_multiple_regression.jl) to get the data for multiple linear regression. This is done by looping through the data sets line by line and parsing out the information we are interested in (categorical variables are mapped to a corresponding dictionary) that is read into a file for use in future analyses. 
 
-[thedspet_smoking.jl](thedspet_smoking.jl) and to get the data set for multiple linear regression use 
-[data_for_multiple_regression.jl](data_for_multiple_regression.jl). In both of these files we create dictionaries that pertain to the factor of interest and parse through the data set 
+After the data was extracted we analyzed the data, starting with a visualization, for which a boxplot was constructed using [thesdpet_visual.jl](thesdpet_visual.jl)
+
+
+[thedspet_smoking_anova.jl](thedspet_smoking_anova.jl)
+
+
+
+[thedspet_smoking_regression.jl](thedspet_smoking_regression.jl) and [multipleregression.jl](multipleregression.jl)
+
+
+
 
 ### Contributions 
 I would like to thank the members of my team that all worked so hard to make this project what it is: 
