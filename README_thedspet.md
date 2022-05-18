@@ -53,6 +53,7 @@ I would like to thank the members of my team that all worked so hard to make thi
 
 You can also fine [me on github](https://github.com/timhedspeth)
 
+I also would like to thank the Professors, TAs and all other classmates for a great semester! 
 
 
 ### To Do 
